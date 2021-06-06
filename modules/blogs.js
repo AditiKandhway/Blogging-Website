@@ -4,15 +4,16 @@ const blogSchema = new mongoose.Schema({
        type:String,
        required:true
    },
-   feedback:{
+   author:{
        type:String,
-       required:true
    },
    title:{
        type:String,
        required:true
+   },
+   number:{
+     type:Number,
    }
 });
 const AddingBlog = mongoose.model('AddingBlog',blogSchema);
 module.exports= AddingBlog;
-

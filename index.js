@@ -32,7 +32,7 @@ app.get('/',function(req,res){
 app.post('/create-blog',function(req,res){
     AddingBlog.create({
         blog:req.body.blog,
-        feedback:req.body.feedback,
+        author:req.body.author,
         title:req.body.title
     },function(err,newblog){
         if(err)
